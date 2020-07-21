@@ -1,0 +1,15 @@
+html {
+  margin: 10px;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+pre {
+  font-size: 20px;
+}
+
+li {
+  font-style: italic;
+}
