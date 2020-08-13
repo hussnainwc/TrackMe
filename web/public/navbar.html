@@ -10,5 +10,12 @@
       <a class="nav-item nav-link" href="/send-command">Send Command</a>
       <a class="nav-item nav-link" href="/about">About Me</a>
     </div>
+    <div style="cursor: pointer;" id='auth-nav'class='navbar-nav'></div>
   </div>
 </nav>
+<script>
+const isAuthenticated = localStorage.getItem('isAuthenticated');
+const logoutElement = '<a class="nav-item nav-link"onClick="logout()">Logout</a>';
+const loginElement = '<a class="nav-item nav-link"href="/login">Login</a>';
+isAuthenticated ? $('#auth-nav').append(logoutElement) : $('#auth-nav').append(loginElement);
+</script>
